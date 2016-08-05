@@ -1,0 +1,44 @@
+{
+    "name": "SimpleText",
+    "version": "1.0",
+    "author": "Sam Wilson",
+    "url": "",
+    "descriptionmsg": "simpletext-desc",
+    "namemsg": "skinname-simpletext",
+    "license-name": "GPL-3.0+",
+    "type": "skin",
+    "ValidSkinNames": {
+        "simpletext": "SimpleText"
+    },
+    "MessagesDirs": {
+        "SimpleText": [
+            "i18n"
+        ]
+    },
+    "ResourceModules": {
+        "skins.simpletext": {
+            "class": "ResourceLoaderSkinModule",
+            "position": "top",
+            "styles": {
+                "resources/style.css": {
+                    "media": "screen"
+                },
+                "resources/normalize.css": {
+                    "media": "screen"
+                },
+                "resources/print.css": {
+                    "media": "print"
+                }
+            }
+        }
+    },
+    "ResourceFileModulePaths": {
+        "localBasePath": "",
+        "remoteSkinPath": "SimpleText"
+    },
+    "AutoloadClasses": {
+        "SkinSimpleText": "SimpleText.skin.php",
+        "SimpleTextTemplate": "SimpleTextTemplate.php"
+    },
+    "manifest_version": 1
+}

@@ -1,0 +1,42 @@
+body { line-height:1.6; font-size:medium; font-family:sans-serif }
+h1, h2, h3 { line-height: 1.2 }
+a { text-decoration:none; color:#060 }
+a:hover { text-decoration:underline }
+article { margin:1em; max-width:50em; text-align:justify }
+
+/* Forms */
+input, textarea { border-radius:0; border:1px solid #666; color:black }
+
+/* Header */
+header { border-bottom:1px solid black; padding:0 }
+header h1,
+header nav { line-height:1.6 }
+header h1 { font-size:large; margin:0 0 0 1em }
+header nav { float:right }
+header nav form,
+header nav p { display:inline-block; margin:0 1em 0 0; vertical-align:bottom; font-size:large; font-weight:normal }
+header input { border:0; border-left:1px solid black; padding:0 0.6em }
+
+/* Content */
+p.subtitle { margin:0; background-color:#efefef }
+
+/* Tables of Contents */
+div#toc { border:2px solid #ccc; border-width:2px 0; color:#ccc; line-height:1.1; font-size:medium }
+div#toc a { color:black }
+div#toc #toctitle h2 { margin:0; font-size:medium; font-variant:small-caps }
+div#toc span.toctoggle { display:none }
+div#toc ul { list-style-type:none }
+div#toc ul li { padding:0 }
+
+/* Footer */
+footer { text-align:center; font-size:small; border-top:1px solid #ccc; margin-top:3em; padding:1em }
+footer ul { margin:0; padding:0 }
+footer ul li { display:inline-block; margin:0 1em }
+
+/* Editing */
+body.action-edit article,
+body.action-submit article { max-width:none }
+h2 span.mw-editsection,
+h3 span.mw-editsection { display:none }
+h2:hover span.mw-editsection,
+h3:hover span.mw-editsection { display:inline; vertical-align:middle }
