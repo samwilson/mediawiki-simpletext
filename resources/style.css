@@ -14,11 +14,14 @@ header nav { line-height:1.6 }
 header h1 { font-size:large; margin:0 0 0 1em }
 header nav { float:right }
 header nav form,
-header nav p { display:inline-block; margin:0 1em 0 0; vertical-align:bottom; font-size:large; font-weight:normal }
+header nav p { display:inline-block; margin:0; vertical-align:bottom; font-size:large; font-weight:normal }
+header nav p { margin-right:2em }
 header input { border:0; border-left:1px solid black; padding:0 0.6em }
 
 /* Content */
-p.subtitle { margin:0; background-color:#efefef }
+p.subtitle,
+div.catlinks { margin:0; background-color:#efefef; padding:0.3em; font-size:small }
+div.catlinks { margin-top:2em }
 
 /* Tables of Contents */
 div#toc { border:2px solid #ccc; border-width:2px 0; color:#ccc; line-height:1.1; font-size:medium }
@@ -29,9 +32,9 @@ div#toc ul { list-style-type:none }
 div#toc ul li { padding:0 }
 
 /* Footer */
-footer { text-align:center; font-size:small; border-top:1px solid #ccc; margin-top:3em; padding:1em }
+footer { font-size:small; border-top:1px solid #ccc; margin-top:3em; padding:1em }
 footer ul { margin:0; padding:0 }
-footer ul li { display:inline-block; margin:0 1em }
+footer ul li { display:inline-block; margin:0 1em 0 0 }
 
 /* Editing */
 body.action-edit article,

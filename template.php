@@ -35,6 +35,10 @@
 <footer>
     <ul>
 
+        <?php if ($this->data['loggedin']) {
+            echo '<li>'.Linker::linkKnown(Title::newFromText('Special:Upload'), 'Upload a file').'</li>';
+        } ?>
+
         <?php if (isset($this->data['content_navigation']['views']['edit'])): ?>
         <li>
             <a href="<?php echo $this->data['content_navigation']['views']['edit']['href'] ?>">
@@ -62,7 +66,7 @@
     </ul>
 </footer>
 
-<?php //echo '<pre>'.print_r($this->data, true),'</pre>' ?>
+<?php //echo '<pre>'.print_r(array_keys($this->data), true),'</pre>' ?>
 
 <?php $this->printTrail() ?>
 </body>
