@@ -16,7 +16,17 @@ header nav { float:right }
 header nav form,
 header nav p { display:inline-block; margin:0; vertical-align:bottom; font-size:large; font-weight:normal }
 header nav p { margin-right:2em }
-header input { border:0; border-left:1px solid black; padding:0 0.6em }
+header input[name='search'] { border:0; border-left:1px solid black; padding:0 0.6em }
+header input[name='go'] { position:absolute; right:9999px }
+@media (max-width:600px) {
+    header { text-align:center; border:0 }
+    header nav { float:none }
+    header nav form,
+    header nav p a { display:block; margin:0; background-color:#efefef; width:100% }
+    header nav p { display:block; margin:0; font-size:small }
+    header h1 { margin:1em 0 0 0 }
+    header nav input[name='search'] { display:block; width:100%; border:1px solid #ccc; border-width:1px 0 }
+}
 
 /* Content */
 p.subtitle,
@@ -43,3 +53,6 @@ h2 span.mw-editsection,
 h3 span.mw-editsection { display:none }
 h2:hover span.mw-editsection,
 h3:hover span.mw-editsection { display:inline; vertical-align:middle }
+@media (max-width:600px) {
+    textarea { width:100%; max-height:80%; display:block }
+}
