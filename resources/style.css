@@ -2,7 +2,7 @@ body { line-height:1.6; font-size:medium; font-family:sans-serif }
 h1, h2, h3 { line-height: 1.2 }
 a { text-decoration:none; color:#060 }
 a:hover { text-decoration:underline }
-article { margin:1em; max-width:50em; text-align:justify }
+article { margin:1em; max-width:50em; text-align:left }
 
 /* Forms */
 input, textarea { border-radius:0; border:1px solid #666; color:black }
@@ -40,6 +40,12 @@ div#toc #toctitle h2 { margin:0; font-size:medium; font-variant:small-caps }
 div#toc span.toctoggle { display:none }
 div#toc ul { list-style-type:none }
 div#toc ul li { padding:0 }
+
+/* Images */
+.thumb { font-size:small }
+/*.flickrapi .thumb .magnify a { border:0; display:block; float:right; width:25px; height:25px;
+    background-image: url("https://s.yimg.com/pw/images/goodies/white-small-chiclet.png");
+    background-repeat:no-repeat }*/
 
 /* Footer */
 footer { font-size:small; border-top:1px solid #ccc; margin-top:3em; padding:1em }
