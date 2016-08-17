@@ -2,7 +2,9 @@ body { line-height:1.6; font-size:medium; font-family:sans-serif }
 h1, h2, h3 { line-height: 1.2 }
 a { text-decoration:none; color:#060 }
 a:hover { text-decoration:underline }
+a.text.external {  }
 article { margin:1em; max-width:50em; text-align:left }
+blockquote { border-left:thick solid #ccc; font-size:smaller; font-style:italic; padding-left:0.6em; margin-left:1em }
 
 /* Forms */
 input, textarea { border-radius:0; border:1px solid #666; color:black }
@@ -32,6 +34,7 @@ header input[name='go'] { position:absolute; right:9999px }
 p.subtitle,
 div.catlinks { margin:0; background-color:#efefef; padding:0.3em; font-size:small }
 div.catlinks { margin-top:2em }
+div.catlinks a { color:#060 }
 
 /* Tables of Contents */
 div#toc { border:2px solid #ccc; border-width:2px 0; color:#ccc; line-height:1.1; font-size:medium }
@@ -42,7 +45,9 @@ div#toc ul { list-style-type:none }
 div#toc ul li { padding:0 }
 
 /* Images */
-.thumb { font-size:small }
+.thumb { font-size:small; margin: 0 0 2em 0 }
+.thumb.tright { margin-left:2em }
+.thumb.tleft { margin-right:2em }
 /*.flickrapi .thumb .magnify a { border:0; display:block; float:right; width:25px; height:25px;
     background-image: url("https://s.yimg.com/pw/images/goodies/white-small-chiclet.png");
     background-repeat:no-repeat }*/
