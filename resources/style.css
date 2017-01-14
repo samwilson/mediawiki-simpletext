@@ -1,24 +1,23 @@
-body { line-height:1.6; font-size:medium; font-family:sans-serif }
+body { line-height:1.6; font-size:medium; font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;  }
 h1, h2, h3 { line-height: 1.2 }
 a { text-decoration:none; color:#060 }
 a:hover { text-decoration:underline }
 a.text.external {  }
-article { margin:1em; max-width:50em; text-align:left }
+article { margin:1em auto; max-width:50em; text-align:left }
 blockquote { border-left:thick solid #ccc; font-size:smaller; font-style:italic; padding-left:0.6em; margin-left:1em }
 
 /* Forms */
 input, textarea { border-radius:0; border:1px solid #666; color:black }
 
 /* Header */
-header { border-bottom:1px solid black; padding:0 }
+header { padding:0; text-align:center; margin:2em }
 header h1,
-header nav { line-height:1.6 }
-header h1 { font-size:large; margin:0 0 0 1em }
-header nav { float:right }
+header nav { font-size:medium }
+header h1 { font-size:xx-large; margin-top:5em }
+header nav { }
 header nav form,
-header nav p { display:inline-block; margin:0; vertical-align:bottom; font-size:large; font-weight:normal }
-header nav p { margin-right:2em }
-header input[name='search'] { border:0; border-left:1px solid black; padding:0 0.6em }
+header nav p { margin:0 }
+header input[name='search'] { border:0; border:1px solid #a6b3cd; padding:0 0.6em }
 header input[name='go'] { position:absolute; right:9999px }
 @media (max-width:600px) {
     header { text-align:center; border:0 }
@@ -53,13 +52,16 @@ div#toc ul li { padding:0 }
     background-repeat:no-repeat }*/
 
 /* Footer */
-footer { font-size:small; border-top:1px solid #ccc; margin-top:3em; padding:1em }
+footer { font-size:small; text-align:center; margin-top:10em; padding:1em }
 footer ul { margin:0; padding:0 }
 footer ul li { display:inline-block; margin:0 1em 0 0 }
 
 /* Editing */
 body.action-edit article,
-body.action-submit article { max-width:none }
+body.action-submit article { max-width:none; margin:1em }
+body.action-edit header h1,
+body.action-submit header h1 { margin:2em 0 0 0; font-size:large }
+textarea { font-family:monospace }
 h2 span.mw-editsection,
 h3 span.mw-editsection { display:none }
 h2:hover span.mw-editsection,
@@ -67,3 +69,6 @@ h3:hover span.mw-editsection { display:inline; vertical-align:middle }
 @media (max-width:600px) {
     textarea { width:100%; max-height:80%; display:block }
 }
+
+/* Other forms */
+.mw-ui-vform {margin:auto}

@@ -1,11 +1,11 @@
 <header>
     <nav>
-        <p>
+        <p id="sitename">
             <a href="<?php echo $this->data['nav_urls']['mainpage']['href'] ?>">
                 <?php $this->text('sitename') ?>
             </a>
         </p>
-        <form action="<?php echo $this->get('wgScript') ?>" method="get" role="search">
+        <form action="<?php echo $this->get('wgScript') ?>" method="get" role="search" id="searchform">
             <?php echo $this->makeSearchInput(['id' => 'searchInput']) ?>
             <input type="submit" name="go" value="Go" />
         </form>
