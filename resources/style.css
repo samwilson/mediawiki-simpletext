@@ -5,19 +5,21 @@ a:hover { text-decoration:underline }
 a.text.external {  }
 article { margin:1em auto; max-width:50em; text-align:left }
 blockquote { border-left:thick solid #ccc; font-size:smaller; font-style:italic; padding-left:0.6em; margin-left:1em }
+code, kbd, samp { font-size:0.8em !important; background-color:#ededed }
+textarea { font-family:monospace }
 
 /* Forms */
 input, textarea { border-radius:0; border:1px solid #666; color:black }
+.mw-htmlform-submit-buttons { margin:0.4em 2px; display:block }
 
 /* Header */
 header { padding:0; text-align:center; margin:2em }
 header h1,
 header nav { font-size:medium }
 header h1 { font-size:xx-large; margin-top:5em }
-header nav { }
 header nav form,
 header nav p { margin:0 }
-header input[name='search'] { border:0; border:1px solid #a6b3cd; padding:0 0.6em }
+header input[name='search'] { border:1px solid #a6b3cd; padding:0 0.6em }
 header input[name='go'] { position:absolute; right:9999px }
 @media (max-width:600px) {
     header { text-align:center; border:0 }
@@ -26,7 +28,9 @@ header input[name='go'] { position:absolute; right:9999px }
     header nav p a { display:block; margin:0; background-color:#efefef; width:100% }
     header nav p { display:block; margin:0; font-size:small }
     header h1 { margin:1em 0 0 0 }
-    header nav input[name='search'] { display:block; width:100%; border:1px solid #ccc; border-width:1px 0 }
+    header nav input[name='search'] {
+        display:block; width:100%; border-style:solid; border-color:#ccc; border-width:1px 0
+    }
 }
 
 /* Content */
@@ -34,6 +38,23 @@ p.subtitle,
 div.catlinks { margin:0; background-color:#efefef; padding:0.3em; font-size:small }
 div.catlinks { margin-top:2em }
 div.catlinks a { color:#060 }
+
+/* File pages. */
+body.ns-6 { background-color:#001000; color:white }
+body.ns-6 a { color:#f4e000 }
+body.ns-6 p.subtitle,
+body.ns-6 div.catlinks { background-color:inherit; border:1px solid #efefef }
+body.ns-6 table { background-color:inherit!important; color:white }
+body.ns-6 table th { background-color:inherit!important }
+body.ns-6 header { margin:0 }
+body.ns-6 #searchform { position:absolute; right:0; top:0 }
+body.ns-6 #sitename { position:absolute; left:10px; top:0 }
+body.ns-6 header h1 { margin:1em }
+body.ns-6 #filetoc { display:none }
+body.ns-6 .fullImageLink,
+body.ns-6 .fullMedia { text-align:center }
+body.ns-6 .fullMedia { font-size:smaller }
+body.ns-6 #searchInput { background-color:inherit; color:#f4e000; border-color:#f4e000; border-width:0 0 1px 1px }
 
 /* Tables of Contents */
 div#toc { border:2px solid #ccc; border-width:2px 0; color:#ccc; line-height:1.1; font-size:medium }
@@ -61,13 +82,13 @@ body.action-edit article,
 body.action-submit article { max-width:none; margin:1em }
 body.action-edit header h1,
 body.action-submit header h1 { margin:2em 0 0 0; font-size:large }
-textarea { font-family:monospace }
+body.action-edit textarea,
+body.action-submit textarea { width:100%; max-height:80%; display:block }
 h2 span.mw-editsection,
 h3 span.mw-editsection { display:none }
 h2:hover span.mw-editsection,
 h3:hover span.mw-editsection { display:inline; vertical-align:middle }
 @media (max-width:600px) {
-    textarea { width:100%; max-height:80%; display:block }
 }
 
 /* Other forms */
