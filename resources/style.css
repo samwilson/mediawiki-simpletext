@@ -83,7 +83,7 @@ body.action-submit article { max-width:none; margin:1em }
 body.action-edit header h1,
 body.action-submit header h1 { margin:2em 0 0 0; font-size:large }
 body.action-edit textarea,
-body.action-submit textarea { width:100%; max-height:80%; display:block }
+body.action-submit textarea { width:100%; max-height:80%; display:block; font-family:monospace }
 h2 span.mw-editsection,
 h3 span.mw-editsection { display:none }
 h2:hover span.mw-editsection,
