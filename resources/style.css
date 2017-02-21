@@ -27,7 +27,7 @@ header input[name='go'] { position:absolute; right:9999px }
     header { text-align:center; border:0; margin:0 }
     header nav { float:none }
     header nav form,
-    header nav p a { display:block; margin:0; background-color:#efefef; width:100% }
+    header nav p a { display:block; margin:0; background-color:#efefef; width:100%; padding-top:0.2em }
     header nav p { display:block; margin:0; font-size:small }
     header h1 { margin:1em 0 0 0 }
     header nav input[name='search'] {
