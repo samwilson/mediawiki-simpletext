@@ -2,7 +2,7 @@
     "name": "SimpleText",
     "version": "1.1.0",
     "author": "Sam Wilson",
-    "url": "",
+    "url": "https://samwilson.id.au/SimpleText_MediaWiki_skin",
     "descriptionmsg": "simpletext-desc",
     "namemsg": "skinname-simpletext",
     "license-name": "GPL-3.0+",
@@ -17,11 +17,10 @@
     },
     "ResourceModules": {
         "skins.simpletext": {
-            "class": "ResourceLoaderSkinModule",
             "position": "top",
             "styles": {
                 "resources/style.css": {
-                    "media": "screen"
+                    "media": "all"
                 },
                 "resources/normalize.css": {
                     "media": "screen"

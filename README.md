@@ -1,4 +1,4 @@
 SimpleText skin for MediaWiki
 =============================
 
-https://github.com/samwilson/mediawiki-simpletext
+https://samwilson.id.au/SimpleText_MediaWiki_skin
