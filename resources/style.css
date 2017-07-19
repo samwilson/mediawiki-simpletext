@@ -45,7 +45,7 @@ div.catlinks a { color:#060 }
 }
 
 /* File pages. */
-body.ns-6 { background-color:#001000; color:white }
+body.ns-6 { background-color:#212124; color:white }
 body.ns-6 a { color:#f4e000 }
 body.ns-6 p.subtitle,
 body.ns-6 div.catlinks { background-color:inherit; border:1px solid #efefef }
@@ -73,14 +73,12 @@ div#toc ul li { padding:0 }
 .thumb { font-size:small; margin: 0 0 2em 0 }
 .thumb.tright { margin-left:2em }
 .thumb.tleft { margin-right:2em }
-/*.flickrapi .thumb .magnify a { border:0; display:block; float:right; width:25px; height:25px;
-    background-image: url("https://s.yimg.com/pw/images/goodies/white-small-chiclet.png");
-    background-repeat:no-repeat }*/
 
 /* Footer */
 footer { font-size:small; text-align:center; margin-top:10em; padding:1em }
 footer ul { margin:0; padding:0 }
 footer ul li { display:inline-block; margin:0 1em 0 0 }
+footer a { color: rgba(0, 102, 0, 0.5) }
 
 /* Editing */
 body.action-edit article,
