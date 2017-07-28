@@ -35,6 +35,14 @@
 <footer>
     <ul>
 
+        <?php if (isset($this->data['content_navigation']['views']['edit'])): ?>
+        <li>
+            <a href="<?php echo $this->data['content_navigation']['views']['edit']['href'] ?>">
+                Edit this page
+            </a>
+        </li>
+        <?php endif ?>
+
         <?php if (isset($this->data['personal_urls']['login'])): ?>
         <li>
             <a href="<?php echo $this->data['personal_urls']['login']['href'] ?>">
