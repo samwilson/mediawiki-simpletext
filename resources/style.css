@@ -4,13 +4,9 @@ a { text-decoration:none; color:#060 }
 a:hover { text-decoration:underline }
 a.external,
 a.extiw {
-    padding-right: 0.35em;
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+85,006600+100 */
-    background: #ffffff; /* Old browsers */
-    background: -moz-linear-gradient(45deg, #ffffff 90%, #006600 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(45deg, #ffffff 90%, #006600 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(45deg, #ffffff 90%, #006600 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#006600', GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    color: rgba(0,102,0,0.85);
+    background: url("Icon_External_Link_green.png") no-repeat center right;
+    padding-right: 13px;
 }
 article { margin:1em auto; max-width:50em; text-align:left }
 blockquote { border-left:thick solid #ccc; font-size:smaller; font-style:italic; padding-left:0.6em; margin-left:1em }
