@@ -1,4 +1,4 @@
-body { line-height:1.6; font-size:medium; font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;  }
+body { line-height:1.6; font-size:medium; font-family: "Ubuntu", "Century Gothic", "CenturyGothic", "AppleGothic", sans-serif;  }
 h1, h2, h3 { line-height: 1.2 }
 a { text-decoration:none; color:#060 }
 a:hover { text-decoration:underline }

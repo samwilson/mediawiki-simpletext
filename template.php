@@ -34,35 +34,19 @@
 
 <footer>
     <ul>
-
-        <?php if (isset($this->data['content_navigation']['views']['edit'])): ?>
-        <li>
-            <a href="<?php echo $this->data['content_navigation']['views']['edit']['href'] ?>">
-                Edit this page
-            </a>
-        </li>
-        <?php endif ?>
-
-        <?php if (isset($this->data['personal_urls']['login'])): ?>
-        <li>
-            <a href="<?php echo $this->data['personal_urls']['login']['href'] ?>">
-                Log in
-            </a>
-        </li>
-        <?php endif ?>
-
-        <?php if (isset($this->data['personal_urls']['logout'])): ?>
-        <li>
-            <a href="<?php echo $this->data['personal_urls']['logout']['href'] ?>">
-                Log out
-            </a>
-        </li>
-        <?php endif ?>
-
+        <?php
+        $links = array_merge(
+            $this->get('content_actions'),
+            $this->getToolbox(),
+            $this->getNavUrls(),
+            $this->getPersonalTools()
+        );
+        foreach ($links as $url => $urlDetails) {
+            if ( is_array( $urlDetails ) ) echo $this->makeListItem( $url, $urlDetails );
+        }
+        ?>
     </ul>
 </footer>
-
-<?php //echo '<pre>'.print_r(array_keys($this->data), true),'</pre>' ?>
 
 <?php $this->printTrail() ?>
 </body>
