@@ -1,0 +1,9 @@
+#firstHeading .prefix,
+#firstHeading .ext {
+	visibility: hidden;
+	color: #cecb87;
+}
+#firstHeading:hover .prefix,
+#firstHeading:hover .ext {
+	visibility: visible;
+}

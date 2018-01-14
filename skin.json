@@ -1,43 +1,51 @@
 {
-    "name": "SimpleText",
-    "version": "1.1.0",
-    "author": "Sam Wilson",
-    "url": "https://samwilson.id.au/SimpleText_MediaWiki_skin",
-    "descriptionmsg": "simpletext-desc",
-    "namemsg": "skinname-simpletext",
-    "license-name": "GPL-3.0+",
-    "type": "skin",
-    "ValidSkinNames": {
-        "simpletext": "SimpleText"
-    },
-    "MessagesDirs": {
-        "SimpleText": [
-            "i18n"
-        ]
-    },
-    "ResourceModules": {
-        "skins.simpletext": {
-            "position": "top",
-            "styles": {
-                "resources/style.css": {
-                    "media": "all"
-                },
-                "resources/normalize.css": {
-                    "media": "screen"
-                },
-                "resources/print.css": {
-                    "media": "print"
-                }
-            }
-        }
-    },
-    "ResourceFileModulePaths": {
-        "localBasePath": "",
-        "remoteSkinPath": "SimpleText"
-    },
-    "AutoloadClasses": {
-        "SkinSimpleText": "SimpleText.skin.php",
-        "SimpleTextTemplate": "SimpleTextTemplate.php"
-    },
-    "manifest_version": 1
+	"name": "SimpleText",
+	"version": "1.1.0",
+	"author": "Sam Wilson",
+	"url": "https://samwilson.id.au/SimpleText_MediaWiki_skin",
+	"descriptionmsg": "simpletext-desc",
+	"namemsg": "skinname-simpletext",
+	"license-name": "GPL-3.0+",
+	"type": "skin",
+	"ValidSkinNames": {
+		"simpletext": "SimpleText"
+	},
+	"MessagesDirs": {
+		"SimpleText": [
+			"i18n"
+		]
+	},
+	"ResourceModules": {
+		"skins.simpletext": {
+			"position": "top",
+			"styles": {
+				"resources/style.css": {
+					"media": "all"
+				},
+				"resources/normalize.css": {
+					"media": "screen"
+				},
+				"resources/print.css": {
+					"media": "print"
+				}
+			}
+		},
+		"skins.simpletext.js": {
+			"scripts": "resources/scripts.js",
+			"styles": {
+				"resources/scripts.css": {
+					"media": "all"
+				}
+			}
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "",
+		"remoteSkinPath": "SimpleText"
+	},
+	"AutoloadClasses": {
+		"SkinSimpleText": "SimpleText.skin.php",
+		"SimpleTextTemplate": "SimpleTextTemplate.php"
+	},
+	"manifest_version": 2
 }
