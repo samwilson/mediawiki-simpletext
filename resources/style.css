@@ -139,9 +139,7 @@ h3:hover span.mw-editsection { display:inline; vertical-align:middle }
 /* Other forms */
 .mw-ui-vform {margin:auto}
 
-.mw-references-wrap {
-	border-top: 1px solid #ccc;
+ol.references {
 	margin-top: 2em;
 	font-size: smaller;
-	max-width: 50em;
 }
