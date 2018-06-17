@@ -115,6 +115,7 @@ div#toc ul li { padding:0 }
 .thumb { font-size:small; margin: 0 0 2em 0 }
 .thumb.tright { margin-left:2em }
 .thumb.tleft { margin-right:2em }
+img { max-width:100%; height:auto }
 
 /* Footer */
 footer { font-size:small; text-align:center; margin-top:10em; padding:1em }
