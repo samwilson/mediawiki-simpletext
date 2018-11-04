@@ -57,9 +57,7 @@ body.ns-6 article { width:100%; margin:0; max-width: none }
 body.ns-6 p.subtitle,
 body.ns-6 div.catlinks { background-color:inherit; border:1px solid #efefef }
 body.ns-6 header { margin:0; background-color:black; color:white }
-/*body.ns-6 header a {*/
-	/*color: #f4e000;*/
-/*}*/
+body.ns-6 header a { color: #f4e000 }
 /*body.ns-6 #searchform { position:absolute; right:0; top:0 }*/
 /*body.ns-6 #searchInput { background-color:inherit; color:#f4e000; border-color:#f4e000; border-width:0 0 1px 1px }*/
 /*body.ns-6 #sitename { position:absolute; left:10px; top:0 }*/
@@ -119,9 +117,13 @@ img { max-width:100%; height:auto }
 
 /* Footer */
 footer { font-size:small; text-align:center; margin-top:10em; padding:1em }
-footer ul { margin:0; padding:0 }
-footer ul li { display:inline-block; margin:0 1em 0 0 }
-footer a { color: rgba(0, 102, 0, 0.5) }
+footer ul { margin:0; padding:0; list-style-type:none }
+footer ul li { display:inline }
+footer a { color: rgba(0, 102, 0, 0.5); display:inline-block; margin:0 1em 0 0 }
+@media ( max-width:600px ) {
+	/* Make footer links a bit bigger on mobile. */
+	footer a { border:1px solid #f6efef; padding:3px; margin:3px  }
+}
 
 /* Editing */
 body.action-edit article,
@@ -129,13 +131,11 @@ body.action-submit article { max-width:none; margin:1em }
 body.action-edit header h1,
 body.action-submit header h1 { margin:2em 0 0 0; font-size:large }
 body.action-edit textarea,
-body.action-submit textarea { width:100%; max-height:80%; display:block; font-family:monospace }
+body.action-submit textarea { width:100%; max-height:80%; display:block; font-family:monospace; padding:0 }
 h2 span.mw-editsection,
 h3 span.mw-editsection { display:none }
 h2:hover span.mw-editsection,
 h3:hover span.mw-editsection { display:inline; vertical-align:middle }
-@media (max-width:600px) {
-}
 
 /* Other forms */
 .mw-ui-vform {margin:auto}
