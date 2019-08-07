@@ -2,6 +2,6 @@
 	"@metadata": {
 		"authors": [ "..." ]
 	},
-	"skinname-example": "{{optional}}",
-	"example-desc": "{{desc|what=skin|name=Example|url=https://www.mediawiki.org/wiki/Skin:Example}}"
+	"skinname-simpletext": "{{optional}}",
+	"simpletext-desc": "{{desc|what=skin|name=SimpleText|url=https://www.mediawiki.org/wiki/Skin:SimpleText}}"
 }

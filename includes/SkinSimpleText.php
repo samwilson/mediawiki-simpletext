@@ -13,8 +13,17 @@ class SkinSimpleText extends SkinTemplate {
 		$useHeadElement = true;
 
 	/**
+	 * @param $thumbnail
+	 * @param $attribs
+	 * @param $linkAttribs
+	 */
+	public static function onThumbnailBeforeProduceHTML( $thumbnail, &$attribs, &$linkAttribs ) {
+		//dd($thumbnail, $attribs, $linkAttribs);
+	}
+
+	/**
 	 * Initialise the page.
-	 * @param $out OutputPage
+	 * @param OutputPage $out
 	 */
 	public function initPage( OutputPage $out ) {
 		$out->addMeta( 'viewport', 'width=device-width, initial-scale=1.0' );
@@ -24,9 +33,9 @@ class SkinSimpleText extends SkinTemplate {
 	/**
 	 * Add CSS via ResourceLoader
 	 *
-	 * @param $out OutputPage
+	 * @param OutputPage $out
 	 */
-	function setupSkinUserCss( OutputPage $out ) {
+	public function setupSkinUserCss( OutputPage $out ) {
 		parent::setupSkinUserCss( $out );
 		$out->addModuleStyles( [ 'skins.simpletext' ] );
 	}

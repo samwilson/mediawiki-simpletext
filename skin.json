@@ -15,17 +15,19 @@
 			"i18n"
 		]
 	},
+	"Hooks": {
+		"ThumbnailBeforeProduceHTML": "SkinSimpleText::onThumbnailBeforeProduceHTML"
+	},
 	"ResourceModules": {
 		"skins.simpletext": {
-			"position": "top",
 			"styles": {
-				"resources/style.css": {
+				"resources/style.less": {
 					"media": "all"
 				},
-				"resources/normalize.css": {
+				"resources/libraries/normalize.css": {
 					"media": "screen"
 				},
-				"resources/print.css": {
+				"resources/print.less": {
 					"media": "print"
 				}
 			}
@@ -33,7 +35,7 @@
 		"skins.simpletext.js": {
 			"scripts": "resources/scripts.js",
 			"styles": {
-				"resources/scripts.css": {
+				"resources/scripts.less": {
 					"media": "all"
 				}
 			}
@@ -44,8 +46,8 @@
 		"remoteSkinPath": "SimpleText"
 	},
 	"AutoloadClasses": {
-		"SkinSimpleText": "SimpleText.skin.php",
-		"SimpleTextTemplate": "SimpleTextTemplate.php"
+		"SkinSimpleText": "includes/SkinSimpleText.php",
+		"SimpleTextTemplate": "includes/SimpleTextTemplate.php"
 	},
 	"manifest_version": 2
 }

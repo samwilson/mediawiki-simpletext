@@ -11,10 +11,14 @@ class SimpleTextTemplate extends BaseTemplate {
 	 * Outputs the entire contents of the page
 	 */
 	public function execute() {
-		$this->html('headelement');
-		require __DIR__ . '/template.php';
+		$this->html( 'headelement' );
+		require dirname( __DIR__ ) . '/template.php';
 	}
 
+	/**
+	 * Get the nav_urls data.
+	 * @return array
+	 */
 	protected function getNavUrls() {
 		$out = [];
 		foreach ( $this->get( 'nav_urls' ) as $name => $navUrl ) {
