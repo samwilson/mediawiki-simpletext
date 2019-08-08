@@ -1,3 +1,8 @@
+@smallscreen: 600px;
+@background-color-images: #212124;
+
+@import "tiles";
+
 body {
 	line-height: 1.6;
 	font-size: medium;
@@ -110,6 +115,15 @@ header nav p {
 header input[ name='search' ] {
 	border: 1px solid #a6b3cd;
 	padding: 0 0.6em;
+
+	@media ( max-width: @smallscreen ) {
+		display: block;
+		width: 100%;
+		border-style: solid;
+		border-color: #ccc;
+		border-width: 1px 0;
+		height: 2em;
+	}
 }
 
 header input[ name='go' ] {
@@ -117,7 +131,7 @@ header input[ name='go' ] {
 	right: 9999px;
 }
 
-@media ( max-width: 600px ) {
+@media ( max-width: @smallscreen ) {
 	header,
 	body.ns-6 header {
 		text-align: center;
@@ -147,14 +161,6 @@ header input[ name='go' ] {
 	header h1 {
 		margin: 1em 0 0 0;
 	}
-
-	header nav input[ name='search' ] {
-		display: block;
-		width: 100%;
-		border-style: solid;
-		border-color: #ccc;
-		border-width: 1px 0;
-	}
 }
 
 /* Footer */
@@ -169,7 +175,7 @@ footer {
 		display: inline-block;
 		margin: 0 1em 0 0;
 
-		@media ( max-width: 600px ) {
+		@media ( max-width: @smallscreen ) {
 			/* Make footer links a bit bigger on mobile. */
 			border: 1px solid #f6efef;
 			padding: 3px;
@@ -205,7 +211,7 @@ div.catlinks a {
 	color: #060;
 }
 
-@media ( max-width: 600px ) {
+@media ( max-width: @smallscreen ) {
 	article {
 		margin: 1em;
 		line-height: 1.4em;
@@ -250,6 +256,15 @@ article .toc ul li {
 }
 
 /* File pages. */
+body.ns-6 {
+	header nav a {
+		@media ( max-width: @smallscreen ) {
+			color: #000;
+			font-weight: bolder;
+		}
+	}
+}
+
 body.ns-6 article {
 	width: 100%;
 	margin: 0;
@@ -283,7 +298,7 @@ body.ns-6 #filetoc {
 
 body.ns-6 .fullImageLink {
 	max-width: none;
-	background-color: #212124;
+	background-color: @background-color-images;
 	color: #fff;
 	text-align: center;
 	padding: 3em 0;
@@ -313,6 +328,7 @@ body.ns-6 #mw-imagepage-content,
 body.ns-6 #filehistory,
 body.ns-6 #mw-imagepage-section-filehistory,
 body.ns-6 #mw-imagepage-section-linkstoimage,
+body.ns-6 .mw-imagepage-upload-links,
 body.ns-6 ul,
 body.ns-6 #filelinks,
 body.ns-6 #mw-imagepage-nolinkstoimage,
