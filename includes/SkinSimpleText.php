@@ -7,19 +7,9 @@
  */
 class SkinSimpleText extends SkinTemplate {
 
-	public $skinname = 'simpletext',
-		$stylename = 'SimpleText',
-		$template = SimpleTextTemplate::class,
-		$useHeadElement = true;
+	public $skinname = 'simpletext';
 
-	/**
-	 * @param $thumbnail
-	 * @param $attribs
-	 * @param $linkAttribs
-	 */
-	public static function onThumbnailBeforeProduceHTML( $thumbnail, &$attribs, &$linkAttribs ) {
-		//dd($thumbnail, $attribs, $linkAttribs);
-	}
+	public $template = SimpleTextTemplate::class;
 
 	/**
 	 * Initialise the page.
