@@ -16,7 +16,7 @@
 			<input type="submit" name="go" value="Go"/>
 		</form>
 	</nav>
-	<h1 id="firstHeading"><?php echo $this->get( 'title' ) ?></h1>
+	<h1><?php echo $this->get( 'title' ) ?></h1>
 </header>
 
 <article>

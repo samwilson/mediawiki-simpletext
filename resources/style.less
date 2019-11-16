@@ -1,7 +1,6 @@
 @smallscreen: 600px;
 @background-color-images: #212124;
-
-@import "tiles";
+@import 'tiles';
 
 body {
 	line-height: 1.6;
@@ -33,6 +32,11 @@ a {
 		color: rgba( 0, 102, 0, 0.85 );
 		background: url( Icon_External_Link_green.png ) no-repeat center right;
 		padding-right: 13px;
+	}
+
+	&.selflink {
+		color: inherit;
+		text-decoration: underline;
 	}
 }
 
@@ -271,6 +275,10 @@ body.ns-6 {
 		background-color: #5e5e5e;
 		color: #edeeed;
 		border-color: #d7d7d7;
+	}
+
+	article p.subtitle {
+		background-color: @background-color-images;
 	}
 }
 
