@@ -15,9 +15,6 @@
 			"i18n"
 		]
 	},
-	"Hooks": {
-		"ThumbnailBeforeProduceHTML": "SkinSimpleText::onThumbnailBeforeProduceHTML"
-	},
 	"ResourceModules": {
 		"skins.simpletext": {
 			"styles": {

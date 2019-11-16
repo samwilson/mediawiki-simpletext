@@ -4,7 +4,7 @@
 	 * Make File namespace page titles prettier by low-lighting the prefix and suffix.
 	 */
 	var $firstHeading, pageName, prefixLength, prefix, extLength, titleLength, title, ext, $new;
-	$firstHeading = $( 'body.ns-6 h1#firstHeading' );
+	$firstHeading = $( document.querySelector( 'header h1' ) );
 	pageName = $firstHeading.text();
 	prefixLength = pageName.indexOf( ':' );
 	prefix = pageName.substr( 0, prefixLength + 1 );
