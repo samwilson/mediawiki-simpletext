@@ -17,16 +17,6 @@ class SkinSimpleText extends SkinTemplate {
 	 */
 	public function initPage( OutputPage $out ) {
 		$out->addMeta( 'viewport', 'width=device-width, initial-scale=1.0' );
-		$out->addModules( [ 'skins.simpletext.js' ] );
-	}
-
-	/**
-	 * Add CSS via ResourceLoader
-	 *
-	 * @param OutputPage $out
-	 */
-	public function setupSkinUserCss( OutputPage $out ) {
-		parent::setupSkinUserCss( $out );
 		$out->addModuleStyles( [ 'skins.simpletext' ] );
 	}
 }

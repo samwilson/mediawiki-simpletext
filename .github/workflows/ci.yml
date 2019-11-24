@@ -8,6 +8,10 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - name: Install
-        run: npm install
+        run: |
+          npm install
+          composer install
       - name: Test
-        run: grunt
+        run: |
+          grunt
+          composer test
