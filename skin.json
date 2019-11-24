@@ -28,14 +28,6 @@
 					"media": "print"
 				}
 			}
-		},
-		"skins.simpletext.js": {
-			"scripts": "resources/scripts.js",
-			"styles": {
-				"resources/scripts.less": {
-					"media": "all"
-				}
-			}
 		}
 	},
 	"ResourceFileModulePaths": {

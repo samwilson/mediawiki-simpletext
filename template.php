@@ -16,9 +16,8 @@
 			<input type="submit" name="go" value="Go"/>
 		</form>
 	</nav>
-	<h1><?php echo $this->get( 'title' ) ?></h1>
+	<h1><?php echo $this->getTitle() ?></h1>
 </header>
-
 <article>
 
 	<?php if ( $this->data[ 'subtitle' ] ) { ?>

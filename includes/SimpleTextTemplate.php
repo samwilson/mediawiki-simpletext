@@ -16,6 +16,20 @@ class SimpleTextTemplate extends BaseTemplate {
 	}
 
 	/**
+	 * Get HTML for the title, with wrappers for the namespace and text parts.
+	 * @return string
+	 */
+	public function getTitle() {
+		$title = Title::newFromText( $this->data['title'] );
+		$html = Html::element( 'span', [ 'class' => 'text' ], $title->getText() );
+		// Prepend the namespace if it exists and is not the File namespace.
+		if ( $title->getNsText() && $title->getNamespace() !== NS_FILE ) {
+			$html = Html::element( 'span', [ 'class' => 'ns' ], $title->getNsText() . ':' ) . ' ' . $html;
+		}
+		return $html;
+	}
+
+	/**
 	 * Get the nav_urls data.
 	 * @return array
 	 */

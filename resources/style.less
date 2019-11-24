@@ -101,25 +101,30 @@ header {
 	text-align: center;
 	margin: 2em;
 
+	nav {
+		font-size: medium;
+
+		form,
+		p {
+			margin: 0;
+		}
+	}
+
 	h1 {
 		max-width: @break-width;
 		font-size: xx-large;
 		margin: 5em auto 0 auto;
-		text-align: center;
 
 		@media ( max-width: @break-width ) {
 			margin: 0 1em;
 		}
+
+		.ns {
+			font-size: medium;
+			display: block;
+			font-weight: normal;
+		}
 	}
-}
-
-header nav {
-	font-size: medium;
-}
-
-header nav form,
-header nav p {
-	margin: 0;
 }
 
 header input[ name='search' ] {
@@ -267,6 +272,12 @@ article .toc ul li {
 
 /* File pages. */
 body.ns-6 {
+	header {
+		margin: 0;
+		background-color: #000;
+		color: #fff;
+	}
+
 	header nav a {
 		@media ( max-width: @break-width ) {
 			color: #000;
@@ -287,79 +298,76 @@ body.ns-6 {
 	article p.subtitle {
 		background-color: @background-color-images;
 	}
-}
 
-body.ns-6 article {
-	width: 100%;
-	margin: 0;
-	max-width: none;
-}
+	article {
+		width: 100%;
+		margin: 0;
+		max-width: none;
+	}
 
-body.ns-6 p.subtitle,
-body.ns-6 div.catlinks {
-	background-color: inherit;
-	border: 1px solid #efefef;
-}
+	p.subtitle,
+	div.catlinks {
+		background-color: inherit;
+		border: 1px solid #efefef;
+	}
 
-body.ns-6 header {
-	margin: 0;
-	background-color: #000;
-	color: #fff;
-}
+	header a {
+		color: #f4e000;
+	}
 
-body.ns-6 header a {
-	color: #f4e000;
-}
+	#filetoc {
+		display: none;
+	}
 
-body.ns-6 #filetoc {
-	display: none;
-}
+	.fullImageLink {
+		max-width: none;
+		background-color: @background-color-images;
+		color: #fff;
+		text-align: center;
+		padding: 3em 0;
+	}
 
-body.ns-6 .fullImageLink {
-	max-width: none;
-	background-color: @background-color-images;
-	color: #fff;
-	text-align: center;
-	padding: 3em 0;
-}
+	.fullImageLink > a img {
+		max-width: 99%;
+		height: auto;
+	}
 
-body.ns-6 .fullImageLink > a img {
-	max-width: 99%;
-	height: auto;
-}
+	.mw-filepage-resolutioninfo {
+		display: none;
+	}
 
-body.ns-6 .mw-filepage-resolutioninfo {
-	display: none;
-}
+	.fullMedia p {
+		margin: 0;
+		font-size: smaller;
+	}
 
-body.ns-6 .fullMedia p {
-	margin: 0;
-	font-size: smaller;
-}
+	#mw-imagepage-content {
+		clear: both;
+	}
 
-body.ns-6 #mw-imagepage-content {
-	clear: both;
-}
+	.mw-filepage-resolutioninfo,
+	.fullMedia,
+	#mw-imagepage-content,
+	#filehistory,
+	#mw-imagepage-section-filehistory,
+	#mw-imagepage-section-linkstoimage,
+	.mw-imagepage-upload-links,
+	ul,
+	#filelinks,
+	.catlinks,
+	#mw-imagepage-nolinkstoimage,
+	#metadata,
+	#mw-imglangselector-line,
+	#mw-imagepage-section-duplicates,
+	.mw-imagepage-section-metadata {
+		max-width: 800px;
+		margin: auto;
+		padding: 0.3em;
+	}
 
-body.ns-6 .mw-filepage-resolutioninfo,
-body.ns-6 .fullMedia,
-body.ns-6 #mw-imagepage-content,
-body.ns-6 #filehistory,
-body.ns-6 #mw-imagepage-section-filehistory,
-body.ns-6 #mw-imagepage-section-linkstoimage,
-body.ns-6 .mw-imagepage-upload-links,
-body.ns-6 ul,
-body.ns-6 #filelinks,
-body.ns-6 #mw-imagepage-nolinkstoimage,
-body.ns-6 #metadata,
-body.ns-6 .mw-imagepage-section-metadata {
-	max-width: 800px;
-	margin: auto;
-	padding: 0.3em;
-}
-
-body.ns-6 ul li {
-	list-style-position: inside;
+	ul li {
+		list-style-position: inside;
+	}
 }
 
 /* Images */
