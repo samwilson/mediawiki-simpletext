@@ -20,7 +20,7 @@ class SimpleTextTemplate extends BaseTemplate {
 	 * @return string
 	 */
 	public function getTitle() {
-		$title = Title::newFromText( $this->data['title'] );
+		$title = $this->getSkin()->getRelevantTitle();
 		$html = Html::element( 'span', [ 'class' => 'text' ], $title->getText() );
 		// Prepend the namespace if it exists and is not the File namespace.
 		if ( $title->getNsText() && $title->getNamespace() !== NS_FILE ) {
