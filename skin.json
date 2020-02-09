@@ -30,6 +30,11 @@
 			}
 		}
 	},
+	"ResourceModuleSkinStyles": {
+		"simpletext": {
+			"+ext.echo.styles.badge": "resources/extensions/Echo.less"
+		}
+	},
 	"ResourceFileModulePaths": {
 		"localBasePath": "",
 		"remoteSkinPath": "SimpleText"
