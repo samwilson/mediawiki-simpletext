@@ -218,12 +218,32 @@ div.catlinks {
 	font-size: small;
 }
 
-div.catlinks {
+.catlinks {
 	margin-top: 2em;
+
+	&.catlinks-allhidden {
+		display: none;
+	}
+
+	a {
+		color: #060;
+	}
+
+	ul {
+		display: inline;
+		margin: 0;
+		padding: 0;
+		list-style: none none;
+	}
+
+	li {
+		display: inline-block;
+		padding: 0 0.5em;
+	}
 }
 
-div.catlinks a {
-	color: #060;
+article .printfooter {
+	display: none;
 }
 
 @media ( max-width: @break-width ) {
