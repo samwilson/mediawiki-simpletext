@@ -394,14 +394,21 @@ body.ns-6 {
 .thumb {
 	font-size: small;
 	margin: 0 0 2em 0;
+	text-align: center;
 }
 
 .thumb.tright {
+	float: right;
 	margin-left: 2em;
 }
 
 .thumb.tleft {
+	float: left;
 	margin-right: 2em;
+}
+
+.center .thumb.tnone .thumbinner {
+	margin: auto;
 }
 
 /* Editing */
@@ -429,12 +436,24 @@ body.action-submit textarea {
 h2 span.mw-editsection,
 h3 span.mw-editsection {
 	display: none;
+	margin-left: 1em;
+	opacity: 0.6;
+	font-size: smaller;
+	position: relative;
+	bottom: 3px;
+
+	.mw-editsection-bracket {
+		display: none;
+	}
+
+	a:hover {
+		text-decoration: none;
+	}
 }
 
 h2:hover span.mw-editsection,
 h3:hover span.mw-editsection {
-	display: inline;
-	vertical-align: middle;
+	display: inline-block;
 }
 
 /* Other forms */
