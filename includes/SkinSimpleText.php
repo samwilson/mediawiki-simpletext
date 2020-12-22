@@ -7,8 +7,10 @@
  */
 class SkinSimpleText extends SkinTemplate {
 
+	/** @var string */
 	public $skinname = 'simpletext';
 
+	/** @var string */
 	public $template = SimpleTextTemplate::class;
 
 	/**
