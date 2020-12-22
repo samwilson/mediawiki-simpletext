@@ -13,6 +13,8 @@ class SimpleTextTemplate extends BaseTemplate {
 	public function execute() {
 		$this->html( 'headelement' );
 		require dirname( __DIR__ ) . '/template.php';
+		$this->printTrail();
+		echo '</body></html>';
 	}
 
 	/**

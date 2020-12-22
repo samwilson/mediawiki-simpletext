@@ -4,13 +4,28 @@ on: [push]
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+
+    strategy:
+        matrix:
+            os: [ ubuntu-latest ]
+            php: [ '7.2', '7.3', '7.4' ]
+
+    runs-on: ${{matrix.os}}
+
     steps:
-      - uses: actions/checkout@v1
+      - name: Checkout
+        uses: actions/checkout@v1
+
+      - name: Set up PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: ${{matrix.php}}
+
       - name: Install
         run: |
           npm install
           composer install
+
       - name: Test
         run: |
           grunt
