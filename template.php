@@ -18,7 +18,7 @@
 	</nav>
 	<h1><?php echo $this->getTitle() ?></h1>
 </header>
-<article>
+<article class="mw-body">
 
 	<?php if ( $this->data[ 'subtitle' ] ) { ?>
 		<p class="subtitle">
@@ -41,7 +41,7 @@
 		$links = array_merge(
 			$this->get( 'content_actions' ),
 			$this->getNavUrls(),
-			$this->getToolbox(),
+			$this->get( 'sidebar' )['TOOLBOX'],
 			$this->getPersonalTools()
 		);
 		foreach ( $links as $url => $urlDetails ) {
@@ -52,8 +52,3 @@
 		?>
 	</ul>
 </footer>
-
-<?php $this->printTrail() ?>
-</body>
-</html>
-
