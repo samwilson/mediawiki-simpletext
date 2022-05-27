@@ -7,8 +7,24 @@
 	"namemsg": "skinname-simpletext",
 	"license-name": "GPL-3.0+",
 	"type": "skin",
+	"requires": {
+		"MediaWiki": ">= 1.36.0"
+	},
 	"ValidSkinNames": {
-		"simpletext": "SimpleText"
+		"simpletext": {
+			"class": "SkinTemplate",
+			"args": [
+				{
+					"name": "simpletext",
+					"responsive": true,
+					"template": "SimpleTextTemplate",
+					"bodyOnly": true,
+					"styles": [
+						"skins.simpletext"
+					]
+				}
+			]
+		}
 	},
 	"MessagesDirs": {
 		"SimpleText": [
@@ -40,7 +56,6 @@
 		"remoteSkinPath": "SimpleText"
 	},
 	"AutoloadClasses": {
-		"SkinSimpleText": "includes/SkinSimpleText.php",
 		"SimpleTextTemplate": "includes/SimpleTextTemplate.php"
 	},
 	"manifest_version": 2
