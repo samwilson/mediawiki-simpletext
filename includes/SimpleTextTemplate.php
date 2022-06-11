@@ -11,10 +11,15 @@ class SimpleTextTemplate extends BaseTemplate {
 	 * Outputs the entire contents of the page
 	 */
 	public function execute() {
-		$this->html( 'headelement' );
+		$pre139 = version_compare( MW_VERSION, '1.39', '<' );
+		if ( $pre139 ) {
+			$this->html( 'headelement' );
+		}
 		require dirname( __DIR__ ) . '/template.php';
-		$this->printTrail();
-		echo '</body></html>';
+		if ( $pre139 ) {
+			$this->printTrail();
+			echo '</body></html>';
+		}
 	}
 
 	/**
