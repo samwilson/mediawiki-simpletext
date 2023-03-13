@@ -34,11 +34,11 @@
 	"ResourceModules": {
 		"skins.simpletext": {
 			"styles": {
-				"resources/style.less": {
-					"media": "all"
-				},
 				"resources/libraries/normalize.css": {
 					"media": "screen"
+				},
+				"resources/style.less": {
+					"media": "all"
 				},
 				"resources/print.less": {
 					"media": "print"
