@@ -1,0 +1,56 @@
+<header>
+	<nav>
+		<p id="sitename">
+			<a href="{{link-mainpage}}">
+				{{msg-sitetitle}}
+			</a>
+		</p>
+		{{#data-search-box}}
+			<form action="{{form-action}}" method="get" role="search" id="searchform">
+				<input type="hidden" name="title" value="{{page-title}}">
+				{{{html-input}}}
+				{{{html-button-search}}}
+			</form>
+		{{/data-search-box}}
+	</nav>
+	<div id="siteNotice">{{{html-site-notice}}}</div>
+	<h1 class="firstHeading" {{{html-user-language-attributes}}}>{{{html-title}}}</h1>
+	{{{html-user-message}}}
+</header>
+
+<article id="content" class="mw-body">
+	<header>
+		<div class="mw-indicators mw-body-content">
+			{{#array-indicators}}
+				<div id="{{id}}" class="{{class}}">{{{html}}}</div>
+			{{/array-indicators}}
+		</div>
+		{{msg-tagline}}
+		{{{html-subtitle}}}
+		{{{html-undelete-link}}}
+	</header>
+	{{{html-body-content}}}
+	{{#html-categories}}{{{.}}}{{/html-categories}}
+	{{{html-after-content}}}
+</article>
+
+<footer>
+	<ul>
+		{{#data-portlets.data-namespaces}}
+			{{{html-items}}}
+		{{/data-portlets.data-namespaces}}
+		{{#data-portlets.data-views}}
+			{{{html-items}}}
+		{{/data-portlets.data-views}}
+		{{#data-portlets.data-actions}}
+			{{{html-items}}}
+		{{/data-portlets.data-actions}}
+		{{#data-portlets-sidebar}}
+			{{#data-portlets-first}}{{{html-items}}}{{/data-portlets-first}}
+			{{#array-portlets-rest}}{{{html-items}}}{{/array-portlets-rest}}
+		{{/data-portlets-sidebar}}
+		{{#data-portlets.data-user-menu}}
+			{{{html-items}}}
+		{{/data-portlets.data-user-menu}}
+	</ul>
+</footer>
