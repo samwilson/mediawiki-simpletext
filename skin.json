@@ -1,6 +1,6 @@
 {
 	"name": "SimpleText",
-	"version": "1.1.0",
+	"version": "1.2.0",
 	"author": "Sam Wilson",
 	"url": "https://samwilson.id.au/SimpleText_MediaWiki_skin",
 	"descriptionmsg": "simpletext-desc",
@@ -8,19 +8,20 @@
 	"license-name": "GPL-3.0+",
 	"type": "skin",
 	"requires": {
-		"MediaWiki": ">= 1.36.0"
+		"MediaWiki": ">= 1.40.0"
 	},
 	"ValidSkinNames": {
 		"simpletext": {
-			"class": "SkinTemplate",
+			"class": "SkinMustache",
 			"args": [
 				{
 					"name": "simpletext",
 					"responsive": true,
-					"template": "SimpleTextTemplate",
-					"bodyOnly": true,
 					"styles": [
 						"skins.simpletext"
+					],
+					"messages": [
+						"sitetitle"
 					]
 				}
 			]

@@ -255,6 +255,7 @@ footer {
 
 /* Content */
 p.subtitle,
+#mw-content-subtitle > *,
 div.catlinks {
 	margin: 0;
 	background-color: #efefef;
@@ -441,22 +442,28 @@ body.ns-6 {
 }
 
 /* Images */
+figure,
 .thumb {
 	font-size: small;
 	margin: 0 0 2em 0;
 	text-align: center;
+	float: none;
+	clear: none;
 }
 
+figure.mw-halign-right,
 .thumb.tright {
 	float: right;
 	margin-left: 2em;
 }
 
+figure.mw-halign-left,
 .thumb.tleft {
 	float: left;
 	margin-right: 2em;
 }
 
+figure.mw-halign-center,
 .center .thumb.tnone .thumbinner {
 	margin: auto;
 }
