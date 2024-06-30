@@ -449,6 +449,7 @@ figure,
 	text-align: center;
 	float: none;
 	clear: none;
+	display: table;
 }
 
 figure.mw-halign-right,
@@ -466,6 +467,12 @@ figure.mw-halign-left,
 figure.mw-halign-center,
 .center .thumb.tnone .thumbinner {
 	margin: auto;
+}
+
+figcaption,
+.thumbcaption {
+	display: table-caption;
+	caption-side: bottom;
 }
 
 /* Editing */
