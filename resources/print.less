@@ -13,21 +13,21 @@ footer {
 
 a {
 	text-decoration: underline;
-	color: black;
+	color: #000;
 
-	&[href]:after {
-		content: ' (' attr(href) ')';
+	&[ href ]:after {
+		content: ' (' attr( href ) ')';
 	}
 
 	&.external,
 	&.extiw {
-		color: black;
+		color: #000;
 		background: none;
 		padding-right: 0;
 	}
 
 	&.new {
-		color: black;
+		color: #000;
 		text-decoration: dashed underline;
 	}
 }
