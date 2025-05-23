@@ -1,8 +1,8 @@
 {
 	"name": "SimpleText",
-	"version": "1.2.0",
+	"version": "2.0.0",
 	"author": "Sam Wilson",
-	"url": "https://samwilson.id.au/SimpleText_MediaWiki_skin",
+	"url": "https://www.mediawiki.org/wiki/Special:MyLangauge/Skin:SimpleText",
 	"descriptionmsg": "simpletext-desc",
 	"namemsg": "skinname-simpletext",
 	"license-name": "GPL-3.0+",
@@ -34,6 +34,24 @@
 	},
 	"ResourceModules": {
 		"skins.simpletext": {
+			"features": {
+				"normalize": false,
+				"logo": false,
+				"content-media": false,
+				"content-links": false,
+				"content-links-external": false,
+				"content-parser-output": false,
+				"content-tables": false,
+				"interface": true,
+				"interface-category": false,
+				"interface-message-box": false,
+				"elements": false,
+				"legacy": false,
+				"i18n-ordered-lists": false,
+				"i18n-all-lists-margins": false,
+				"i18n-headings": false,
+				"toc": false
+			},
 			"styles": {
 				"resources/libraries/normalize.css": {
 					"media": "screen"
@@ -55,9 +73,6 @@
 	"ResourceFileModulePaths": {
 		"localBasePath": "",
 		"remoteSkinPath": "SimpleText"
-	},
-	"AutoloadClasses": {
-		"SimpleTextTemplate": "includes/SimpleTextTemplate.php"
 	},
 	"manifest_version": 2
 }
