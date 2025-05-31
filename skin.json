@@ -34,24 +34,6 @@
 	},
 	"ResourceModules": {
 		"skins.simpletext": {
-			"features": {
-				"normalize": false,
-				"logo": false,
-				"content-media": false,
-				"content-links": false,
-				"content-links-external": false,
-				"content-parser-output": false,
-				"content-tables": false,
-				"interface": true,
-				"interface-category": false,
-				"interface-message-box": false,
-				"elements": false,
-				"legacy": false,
-				"i18n-ordered-lists": false,
-				"i18n-all-lists-margins": false,
-				"i18n-headings": false,
-				"toc": false
-			},
 			"styles": {
 				"resources/libraries/normalize.css": {
 					"media": "screen"
