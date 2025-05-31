@@ -1,6 +1,5 @@
 @break-width: 800px;
 @background-color-images: #212124;
-@import 'tiles';
 
 body {
 	line-height: 1.6;
@@ -14,6 +13,21 @@ h1,
 h2,
 h3 {
 	line-height: 1.2;
+}
+
+.mw-heading {
+	display: flex;
+	align-items: center;
+	gap: 1em;
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		display: inline;
+	}
 }
 
 img {
@@ -338,7 +352,7 @@ article .toc .toctext {
 }
 
 article .toc ul {
-	margin-top: 0;
+	margin: 0;
 	padding-left: 0;
 	list-style-type: none;
 }
