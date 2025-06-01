@@ -1,7 +1,9 @@
 SimpleText skin for MediaWiki
 =============================
 
-https://samwilson.id.au/SimpleText_MediaWiki_skin
+> [!IMPORTANT]
+> The code is now hosted on Gerrit at https://gerrit.wikimedia.org/g/mediawiki/skins/SimpleText
+> For more information, see the skin's documentation page: https://www.mediawiki.org/wiki/Special:MyLanguage/Skin:SimpleText
 
 ## Kudos
 
